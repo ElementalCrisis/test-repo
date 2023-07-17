@@ -29,3 +29,40 @@ body:
       placeholder: '#96995ef'
     validations:
       required: false
+  - type: textarea
+    id: log-file
+    attributes:
+      label: Log File
+      description: Paste the relevant log info here or attach the entire log.
+      value: '```
+      PLACE LOG HERE
+      ```'
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: You can drop screenshots here or paste the URL.
+      value: '```
+      PLACE LOG HERE
+      ```'
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the problem you've encountered. What caused the issue, and what you expected to happen.
+      value: '```
+      PLACE LOG HERE
+      ```'
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Being as detailed as possible, please list all steps need to reproduce the issue, if we can't reproduce it then we can't fix it.
+    validations:
+      required: true
