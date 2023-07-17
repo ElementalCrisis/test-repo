@@ -18,6 +18,7 @@ body:
     attributes:
       label: Shoko Version
       description: Please input the version of Shoko you are running.
+      placeholder: '4.2.2'
     validations:
       required: true
   - type: input
@@ -25,7 +26,6 @@ body:
     attributes:
       label: Shoko Version - Daily Commit
       description: Please input the Daily Commit for the version of Shoko you are running. This is the seven digit number shown after the version number.
-      placeholder: '#'
-      value: 'A bug happened!'
+      placeholder: '#96995ef'
     validations:
       required: false
