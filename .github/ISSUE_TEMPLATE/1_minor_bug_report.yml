@@ -1,0 +1,36 @@
+name: Minor Bug Report
+description: For reporting issues you've encountered that still allow Shoko to operate.
+labels: [Bug - Minor]
+body:
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: "Before submitting your issue, please verify the following."
+      options:
+        - label: You're using the latest **Stable** or **Daily** version of Shoko Server.
+          required: true
+        - label: You're using the latest and correct (Stable:Stable, Daily:Daily) Web UI for the version of Shoko you're using.
+          required: true
+        - label: You've searched this repository (top of the page) for the issue or feature you are reporting.
+          required: true
+  - type: input
+    id: usage
+    attributes:
+      label: Shoko Version
+      description: Please input the version of Shoko you are running.
+    validations:
+      required: true
+  - type: input
+    id: usage
+    attributes:
+      label: Shoko Version - Daily Commit
+      description: Please input the Daily Commit for the version of Shoko you are running. This is the seven digit number shown after the version number.
+    validations:
+      required: false
+  - type: textarea
+    id: examples
+    attributes:
+      label: Give us an example of what this icon might look like.
+      description: Please upload or provide links to images that exemplify this request. This gives us a better understanding of what you are requesting.
+    validations:
+      required: true
