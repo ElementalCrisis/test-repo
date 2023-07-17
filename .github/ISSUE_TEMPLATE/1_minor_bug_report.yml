@@ -14,23 +14,16 @@ body:
         - label: You've searched this repository (top of the page) for the issue or feature you are reporting.
           required: true
   - type: input
-    id: usage
+    id: shoko-version
     attributes:
       label: Shoko Version
       description: Please input the version of Shoko you are running.
     validations:
       required: true
   - type: input
-    id: usage
+    id: shoko-version-commit
     attributes:
       label: Shoko Version - Daily Commit
       description: Please input the Daily Commit for the version of Shoko you are running. This is the seven digit number shown after the version number.
     validations:
       required: false
-  - type: textarea
-    id: examples
-    attributes:
-      label: Give us an example of what this icon might look like.
-      description: Please upload or provide links to images that exemplify this request. This gives us a better understanding of what you are requesting.
-    validations:
-      required: true
