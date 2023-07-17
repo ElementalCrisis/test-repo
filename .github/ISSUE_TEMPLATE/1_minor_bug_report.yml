@@ -34,9 +34,7 @@ body:
     attributes:
       label: Log File
       description: Paste the relevant log info here or attach the entire log.
-      value: '```
-      PLACE LOG HERE
-      ```'
+      value: '```PLACE LOG HERE```'
     validations:
       required: false
   - type: textarea
@@ -44,9 +42,6 @@ body:
     attributes:
       label: Screenshots
       description: You can drop screenshots here or paste the URL.
-      value: '```
-      PLACE LOG HERE
-      ```'
     validations:
       required: false
   - type: textarea
@@ -54,9 +49,6 @@ body:
     attributes:
       label: Description
       description: Describe the problem you've encountered. What caused the issue, and what you expected to happen.
-      value: '```
-      PLACE LOG HERE
-      ```'
     validations:
       required: true
   - type: textarea
