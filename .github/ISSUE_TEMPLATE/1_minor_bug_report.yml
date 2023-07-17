@@ -5,7 +5,7 @@ body:
   - type: checkboxes
     id: acknowledgements
     attributes:
-      label: "Before submitting your issue, please verify the following."
+      label: 'Before submitting your issue, please verify the following.'
       options:
         - label: You're using the latest **Stable** or **Daily** version of Shoko Server.
           required: true
@@ -25,5 +25,7 @@ body:
     attributes:
       label: Shoko Version - Daily Commit
       description: Please input the Daily Commit for the version of Shoko you are running. This is the seven digit number shown after the version number.
+      placeholder: '#'
+      value: 'A bug happened!'
     validations:
       required: false
