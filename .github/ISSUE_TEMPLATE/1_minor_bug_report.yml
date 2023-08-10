@@ -22,36 +22,21 @@ body:
     validations:
       required: true
   - type: input
-    id: install-type
-    attributes:
-      label: Install Type
-      description:  Please specify the OS and install type.
-      placeholder: 'Linux - Docker/Synology'
-    validations:
-      required: true
-  - type: input
     id: shoko-version-commit
     attributes:
       label: Shoko Version - Daily Commit
       description: If running a daily build, please input the Daily Commit for the version of Shoko you are running. This is the seven digit number shown after the version number.
-      placeholder: '#96995ef'
+      placeholder: '96995ef'
     validations:
       required: false
-  - type: textarea
-    id: log-file
+  - type: input
+    id: install-type
     attributes:
-      label: Log File
-      description: Paste the relevant log info here or attach the entire log.
-      value: '```PLACE LOG HERE```'
+      label: Install Type
+      description:  Please specify the OS and install type.
+      placeholder: 'e.g. "Windows", "Linux - Docker/Synology", etc.'
     validations:
-      required: false
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots
-      description: You can drop screenshots here or paste the URL.
-    validations:
-      required: false
+      required: true
   - type: textarea
     id: description
     attributes:
@@ -66,3 +51,21 @@ body:
       description: Being as detailed as possible, please list all steps need to reproduce the issue, if we can't reproduce it then we can't fix it.
     validations:
       required: true
+  - type: textarea
+    id: log-file
+    attributes:
+      label: Log File
+      description: Paste the relevant log info here or attach the entire log.
+      value: |
+        ```
+        PLACE LOG HERE
+        ```
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: You can drop screenshots here or paste the URL.
+    validations:
+      required: false
