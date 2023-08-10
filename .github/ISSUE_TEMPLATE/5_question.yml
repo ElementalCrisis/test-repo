@@ -1,6 +1,6 @@
 name: General Questions
 description: For general questions related to Shoko.
-labels: [Bug - Minor]
+labels: [Question]
 body:
   - type: checkboxes
     id: acknowledgements
